@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#16adfc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="#fff"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="状态流程"/>
+    </LinearLayout>
+    <EditText
+            android:completionThreshold="1"
+            android:layout_marginRight="15dp"
+            android:hint="请输入车牌号"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="3dp"
+            android:id="@+id/edit_input"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/edit_background_shape"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+        <EditText
+            android:paddingLeft="4dp"
+              android:hint="请选择开始时间"
+              android:layout_marginRight="15dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="15dp"
+              android:id="@+id/start_pick"
+              android:background="@drawable/edit_background_shape"
+              android:layout_width="match_parent"
+              android:layout_height="38dp" />
+
+
+        <EditText
+            android:paddingLeft="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/end_pick"
+            android:hint="请选择结束时间"
+            android:background="@drawable/edit_background_shape"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#16adfc"
+        android:id="@+id/btn_query"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#fff"
+        android:text="查询"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshWebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/query_status"></com.handmark.pulltorefresh.library.PullToRefreshWebView>
+</LinearLayout>

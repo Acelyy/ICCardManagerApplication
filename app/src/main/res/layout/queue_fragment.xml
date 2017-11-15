@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#16adfc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="#fff"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="排队"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:hint="请输入车牌号"
+            android:completionThreshold="1"
+            android:paddingLeft="3dp"
+            android:id="@+id/auto_complete"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit_background_shape"
+            android:layout_width="260dp"
+            android:layout_height="34dp" />
+        <Button
+            android:layout_marginLeft="5dp"
+            android:background="#16adfc"
+            android:id="@+id/btn_query"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:textColor="#fff"
+            android:text="查询"/>
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshWebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/query_chepai"></com.handmark.pulltorefresh.library.PullToRefreshWebView>
+</LinearLayout>

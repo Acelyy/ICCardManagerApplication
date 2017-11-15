@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.geminno.iccardmanagerapplication.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#BFBFBF" />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_delivery"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/send_tong_selector"
+            android:text="发货" />
+
+        <RadioButton
+            android:id="@+id/rb_status"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/schedule_button_selector"
+            android:text="状态流程" />
+
+        <RadioButton
+            android:id="@+id/rb_queue"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/queue_button_selector"
+            android:text="排队" />
+
+        <RadioButton
+            android:id="@+id/rb_notice"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/notice_button_selector"
+            android:text="公告" />
+
+        <RadioButton
+            android:id="@+id/rb_bind"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/chepai_button_selector"
+            android:text="车牌绑定" />
+    </RadioGroup>
+
+</LinearLayout>
